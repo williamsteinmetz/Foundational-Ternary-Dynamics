@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\cpaci\\\\Desktop\\\\pbr_pedagogy\\\\dissemination\\\\manuscript\" /b)",
+      "Bash(dir:*)",
+      "Bash(mkdir -p:*)",
+      "Bash(mkdir:*)",
+      "Bash(quarto render:*)",
+      "Bash(findstr:*)",
+      "Bash(python:*)",
+      "Bash(ls -la \"C:\\\\Users\\\\cpaci\\\\Desktop\\\\pbr_pedagogy\\\\dissemination\\\\manuscript\"\" | grep -E \"^-)",
+      "Bash(^d \")",
+      "Bash(ls:*)",
+      "Bash(quarto:*)",
+      "Bash(grep:*)",
+      "Bash(for:*)",
+      "Bash(do sed -i 's/TRD/FTD/g' \"$f\")",
+      "Bash(done)",
+      "Bash(find:*)"
+    ]
+  }
+}
