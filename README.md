@@ -66,18 +66,56 @@ python run_all_proofs.py
 ## Repository Structure
 
 ```
-dissemination/
-├── manuscript/           # Quarto book source (82 chapters)
-│   ├── chapters/         # .qmd chapter files
-│   ├── _quarto.yml       # Book configuration
-│   └── references.bib    # Bibliography
-├── paper/                # Academic paper (LaTeX)
-├── simulations/          # Python verification scripts
-├── figures/              # Figure generation scripts
-├── CLAUDE.md             # Technical specification
-├── CLAIMS_MATRIX.md      # Complete claims reference
-├── CHANGELOG.md          # Version history
-└── README.md             # This file
+Foundational-Ternary-Dynamics/
+│
+├── manuscript/                    # Quarto book source (82 chapters)
+│   ├── _book/                     # Compiled HTML/PDF output
+│   ├── _freeze/                   # Quarto cache
+│   ├── chapters/                  # .qmd chapter files
+│   │   ├── 0.1-first-principles.qmd
+│   │   ├── 1.10-lemniscate-alpha.qmd    # Core α derivation
+│   │   ├── 1.10a-fermat-encoding.qmd    # Fermat derivation
+│   │   └── ... (80+ chapter files)
+│   ├── figures/                   # Manuscript-specific figures
+│   ├── _quarto.yml                # Book configuration
+│   ├── references.bib             # Bibliography
+│   ├── index.qmd                  # Book landing page
+│   ├── preface.qmd                # Preface
+│   └── styles.css                 # Custom styling
+│
+├── simulations/                   # Python verification suite
+│   ├── constants.py               # Framework constants (single source)
+│   ├── verify_quadratic.py        # Master quadratic verification
+│   ├── verify_masses.py           # Particle mass derivations
+│   ├── verify_mixing.py           # Mixing matrix verification
+│   ├── verify_cosmology.py        # Cosmological predictions
+│   ├── run_all.py                 # Master verification script
+│   └── README.md                  # Verification documentation
+│
+├── figures/                       # Figure generation scripts
+│   ├── fig_01_lemniscate_alpha.py
+│   ├── fig_02_master_quadratic.py
+│   ├── fig_03_three_states.py
+│   └── ... (70+ figure scripts)
+│
+├── paper/                         # Academic paper (LaTeX)
+│   ├── archive/                   # Previous versions
+│   └── README.md                  # Paper documentation
+│
+├── CLAUDE.md                      # Technical specification
+├── CLAIMS_MATRIX.md               # Complete claims reference
+├── CHANGELOG.md                   # Version history
+├── FTD_REFERENCE.md               # Complete reference with verified formulas
+├── FTD_VERIFICATION_REPORT.md     # Full numerical verification
+├── MATHEMATICAL_VERIFICATION.md   # Step-by-step arithmetic verification
+├── lemniscate_alpha_paper.md      # Academic paper with verified derivations
+├── Consciousness_Quadratic_Derivation.md  # Consciousness theory
+├── NOVEL_CLAIMS.md                # Novel theoretical claims
+├── LOOK_ELSEWHERE_ANALYSIS.md     # Statistical analysis
+├── REPRODUCIBILITY.md             # Reproducibility guide
+├── publication_editor_instructions.md
+├── LICENSE                        # License file
+└── README.md                      # This file
 ```
 
 ---
