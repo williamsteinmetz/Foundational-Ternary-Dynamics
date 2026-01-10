@@ -98,6 +98,15 @@ Foundational-Ternary-Dynamics/
 │   ├── fig_03_three_states.py
 │   └── ... (70+ figure scripts)
 │
+├── models/                        # Scientific Python models
+│   ├── __init__.py                # Package initialization
+│   ├── ftd_core.py                # Core framework (integers, G*, quadratic)
+│   ├── particle_physics.py        # Particle mass derivations
+│   ├── mixing_matrices.py         # PMNS/CKM mixing matrices
+│   ├── cosmology.py               # Inflation, baryogenesis, dark matter
+│   ├── visualization.py           # Derivation chain visualizations
+│   └── run_all.py                 # Master demonstration script
+│
 ├── paper/                         # Academic paper (LaTeX)
 │   ├── archive/                   # Previous versions
 │   └── README.md                  # Paper documentation
