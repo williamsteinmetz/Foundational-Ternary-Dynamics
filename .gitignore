@@ -10,7 +10,6 @@ dist/
 build/
 
 # Quarto build artifacts
-manuscript/_book/
 manuscript/.quarto/
 manuscript/*_files/
 *.quarto_ipynb
